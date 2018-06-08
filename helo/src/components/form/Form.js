@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import './../flexbox-grid.css'
+import './form.css'
 
 
 class Form extends Component {
@@ -9,7 +10,19 @@ class Form extends Component {
     }
     render() {
         return (
-            <div></div>
+            <div>
+                <div>
+                    Form
+                    <input />
+                    <button>ONE</button>
+                    <button>TWO</button>
+                </div>
+                <div>
+
+                </div>
+
+
+            </div>
         );
     }
 }

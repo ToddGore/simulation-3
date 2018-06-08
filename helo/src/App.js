@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import routes from './routes'
 import Nav from './components/nav/Nav'
-
+import routes from './routes'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Nav />
+        <div className='Grid'>
+          <div className='Grid-cell'>
+            <Nav />
+          </div>
+          <div className='Grid-cell'></div>
+          <div className='Grid-cell'></div>
+          <div className='Grid-cell'></div>
+          <div className='Grid-cell'></div>
+          <div className='Grid-cell'></div>
+          <div className='Grid-cell'></div>
+          <div className='Grid-cell'></div>
+        </div>
+
         {routes}
       </div>
     );
