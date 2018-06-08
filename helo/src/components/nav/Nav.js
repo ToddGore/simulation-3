@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux'
 import './../flexbox-grid.css'
 import './nav.css'
 
@@ -27,4 +28,12 @@ export default function Nav() {
 }
 
 
+function mapStateToProps(state) {
+    return {
+        user: state.user
+    }
+}
 
+
+
+// export default connect(mapStateToProps)

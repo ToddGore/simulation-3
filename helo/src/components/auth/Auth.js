@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './../flexbox-grid.css'
 import './auth.css'
 
@@ -16,6 +17,7 @@ class Auth extends Component {
     }
 
 
+
     handleUserNameChange(value) {
         this.setState({ username: value });
     }
@@ -23,6 +25,22 @@ class Auth extends Component {
     handlePasswordChange(value) {
         this.setState({ password: value });
     }
+
+    register() {
+        axios.post('/register', { name: this.state.userInput })
+            .then(res => {
+                this.setState({
+                    userInput: '',
+                    students: res.data
+                })
+            })
+    }
+
+    login() {
+
+    }
+
+
 
     render() {
         return (
