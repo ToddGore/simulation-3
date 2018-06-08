@@ -27,7 +27,7 @@ class Auth extends Component {
     }
 
     register() {
-        axios.post('/register', { name: this.state.userInput })
+        axios.post('/register', { name: this.state.userInput }) // Wrong
             .then(res => {
                 this.setState({
                     userInput: '',
