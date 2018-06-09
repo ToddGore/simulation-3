@@ -1,6 +1,67 @@
 .main {
-    /* background-color: aquamarine; */
-    background-color: lightpink;
-    height: 600px;
-    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* border: 1px solid blue; */
+    height: 100vh;
+    width: 120px;
+    background: rgb(255,112,166);
+    background: linear-gradient(0deg, rgba(255,112,166,1) 0%, rgba(255,151,112,1) 100%);
+    -webkit-box-shadow: 3px 0px 5px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: 3px 0px 5px 0px rgba(0,0,0,0.46);
+    box-shadow: 3px 0px 5px 0px rgba(0,0,0,0.46);
+
+}
+.icons {
+    /* border: 1px solid blue; */
+    height: 60px;
+    width: 60px;
+}
+  /* Removes blue border around buttons */
+.icons:focus {outline:0;}
+
+
+.userImage {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.section{
+/* border: 1px solid lightgreen; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    width: 110px;
+}
+.section:hover input {
+    transition: .4s ease;
+    filter: blur(2px);
+    opacity: 0.4;
+}
+.section:hover .home-text {
+    transition: .6s ease;
+    opacity: 1;
+}
+
+.four {
+    margin-top: auto;
+}
+
+.home-text {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: white;
+    font-size: 24px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+
 }

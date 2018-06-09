@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './../flexbox-grid.css'
+// import './../flexbox-grid.css'
 import './auth.css'
+import heloLogo from '../../assets/helo_logo.png'
+
 
 class Auth extends Component {
     constructor(props) {
@@ -27,7 +29,7 @@ class Auth extends Component {
     }
 
     register() {
-        axios.post('/register', { name: this.state.userInput }) // Wrong
+        axios.post('/api/register', { name: this.state.userInput }) // Wrong
             .then(res => {
                 this.setState({
                     userInput: '',
@@ -45,21 +47,32 @@ class Auth extends Component {
     render() {
         return (
             <div className='auth-main'>
-                <h1>Helo</h1>
-                <input
-                    value={this.state.username}
-                    placeholder="username"
-                    onChange={(e) => this.handleUserNameChange(e.target.value)}
-                />
-                <br />
-                <input
-                    value={this.state.password}
-                    placeholder="password"
-                    onChange={(e) => this.handlePasswordChange(e.target.value)}
-                />
-                <br />
-                <button>Login</button>
-                <button>Register</button>
+                <div className='section-logo'>
+                    <img src={heloLogo} alt="Logo" />
+                </div>
+                <div className='section-title'>
+                    <h1>Helo</h1>
+                </div>
+                <div className='section-username'>
+                    <p>username: </p>
+                    <input
+                        value={this.state.username}
+                        placeholder="username"
+                        onChange={(e) => this.handleUserNameChange(e.target.value)}
+                    />
+                </div>
+                <div className='section-password'>
+                    <p>password: </p>
+                    <input
+                        value={this.state.password}
+                        placeholder="password"
+                        onChange={(e) => this.handlePasswordChange(e.target.value)}
+                    />
+                </div>
+                <div className='section-buttons'>
+                    <button className='auth-button'>Login</button>
+                    <button className='auth-button'>Register</button>
+                </div>
             </div>
         );
     }

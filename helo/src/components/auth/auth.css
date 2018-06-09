@@ -1,5 +1,90 @@
 .auth-main{
-    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    padding: 30px 30px;
+    justify-content: flex-end;
+    height: 450px;
+    width: 550px;
+    background: rgb(233,255,112);
+    background: linear-gradient(243deg, rgba(233,255,112,1) 0%, rgba(255,151,112,1) 100%);
+    -webkit-box-shadow: 3px 6px 34px 1px rgba(0,0,0,0.45);
+    -moz-box-shadow: 3px 6px 34px 1px rgba(0,0,0,0.45);
+    box-shadow: 3px 6px 34px 1px rgba(0,0,0,0.45);
+}
+h1 {
+    color: white;
+    font-size: 76px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+}
+.section-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid blue;  */
+    height: 130px;
     width: 400px;
-    background-color: lightcoral;
+}
+.section-title {
+    /* border: 1px solid blue;  */
+    height: 80px;
+    width: 400px;
+}
+.section-username {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red;  */
+    height: 50px;
+    width: 400px;
+}
+.section-username input {
+    height: 20px;
+    width: 200px;
+    margin: 0 10px;
+}
+.section-username p {
+    color: white;
+    font-size: 24px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.section-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid yellow;  */
+    height: 50px;
+    width: 400px;
+}
+.section-password input {
+    height: 20px;
+    width: 200px;
+    margin: 0 10px;
+}
+.section-password p {
+    color: white;
+    font-size: 24px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.section-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly ;
+    /* border: 1px solid blue;  */
+    height: 50px;
+    width: 400px;
+}
+
+.auth-button {
+    height: 40px;
+    width: 80px;
+    color: white;
+    background-color: #403D39;
 }

@@ -1,5 +1,6 @@
 module.exports = {
     login: (req, res, next) => {
+
         let { username, password } = req.body;
         const { session } = req;
         // const user = users.find(user => user.username === username && user.password === password);

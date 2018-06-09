@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './../flexbox-grid.css'
+// import './../flexbox-grid.css'
 import './dashboard.css'
 
 
@@ -25,7 +25,7 @@ class Dashboard extends Component {
 
     render() {
         return (
-            <div>
+            <div className='dash-main'>
                 <input
                     value={this.state.search}
                     placeholder="search"
